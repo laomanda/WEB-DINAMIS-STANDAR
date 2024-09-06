@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(219, 219, 219);
+    position: relative;
+}
+
+header {
+    background-image: url(header.jpg);
+    border-image: fill 0 linear-gradient(#0001, #000);
+}
+
+.container img{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    padding-left: 40px;
+    animation: kiri 1s ease-out;
+}
+
+.container h2 {
+    text-align: center;
+    font-style: unset;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    animation: kanan 1s ease-out;
+}
+
+.container h4 {
+    text-align: end;
+    font-style: unset;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+    padding-right: 20px;
+    animation: kanan 1s ease-out;
+}
+
+header.container input[type="search"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    justify-content: center;
+    font-style: unset;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeIn 1.5s ease-out;
+}
+
+header.container .caridiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+header.container .caridiv input[type="submit"] {
+    border-radius: 4px;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 8px;
+    font-size: 14px;
+    color: whitesmoke;
+    background-color: #000;
+    animation: fadeIn 1s ease-out;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #3333330a;
+}
+
+.navbar .item {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar .item li {
+    margin: 0 15px;
+}
+
+.navbar .item li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar .item li a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-style: unset;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: #007bff;
+    font-size: 38px;
+}
+
+.kotak1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kotak2 {
+    text-align: center;
+}
+
+.kotak3 {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.harga {
+    text-align: center;
+    font-size: 19px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: inherit;
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="hidden"] {
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}
+
+.aj {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-style: inherit;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+marquee {
+    height: 20px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-size: 22px;
+    margin: 0;
+}
+
+.ye {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ye1 {
+    text-align: center;
+}
+
+.ye2 {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.kirim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.kirim input[type="submit"] {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+    border-radius: 8px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Courier New', Courier, monospace;
+    font-style: unset;
+}
+
+.kirim input[type="submit"]:hover {
+    background-color: #218838;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.kirim input[type="submit"]:active {
+    background-color: #1e7e34;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+
+@keyframes kiri {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1; 
+    }
+}   
+
+@keyframes kanan {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1; 
+        transform: translateX(0);
+    }
+}

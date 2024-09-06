@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(219, 219, 219);
+    position: relative;
+}
+
+header {
+    background-image: url(header.jpg);
+    border-image: fill 0 linear-gradient(#0001, #000);
+}
+
+.container img {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    padding-left: 40px;
+    animation: kiri 1s ease-out;
+}
+
+.container h2 {
+    text-align: center;
+    font-style: unset;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    animation: kanan 1s ease-out;
+}
+
+.container h4 {
+    text-align: end;
+    font-style: unset;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+    padding-right: 20px;
+    animation: kanan 1s ease-out;
+}
+
+header.container input[type="search"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    justify-content: center;
+    font-style: unset;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeIn 1.5s ease-out;
+}
+
+header.container .caridiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+header.container .caridiv input[type="submit"] {
+    border-radius: 4px;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 8px;
+    font-size: 14px;
+    color: whitesmoke;
+    background-color: #000;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #3333330a;
+}
+
+.navbar .item {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar .item li {
+    margin: 0 15px;
+}
+
+.navbar .item li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar .item li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+marquee {
+    height: 20px;
+    padding-bottom: 10px;
+    font-size: 22px;
+}
+
+.pembuka {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    animation: fadeIn 4s ease-out;
+}
+
+.pembuka h2 {
+    margin-top: 0;
+}
+
+.pembuka p {
+    line-height: 1.6;
+}
+
+.alamat table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.alamat table th, .alamat table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.alamat table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.medsos {
+    margin-top: 20px;
+}
+
+.medsos a {
+    margin-right: 10px;
+}
+
+.medsos img {
+    width: 40px;
+    vertical-align: middle;
+}
+
+@keyframes kiri{
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes kanan{
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    } 
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

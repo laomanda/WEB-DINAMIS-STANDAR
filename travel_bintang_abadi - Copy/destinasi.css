@@ -1,0 +1,242 @@
+ body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(219, 219, 219);
+    position: relative;
+}
+
+header {
+    background-image: url(header.jpg);
+    border-image: fill 0 linear-gradient(#0001, #000);
+}
+
+.container img {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    padding-left: 40px;
+    animation: slideInLeft 1s ease-out;
+}
+
+.container h2 {
+    text-align: center;
+    font-style: unset;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    animation: slideInRight 1s ease-out;
+}
+
+.container h4 {
+    text-align: end;
+    font-style: unset;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+    padding-right: 20px;
+    animation: slideInRight 1s ease-out;
+}
+
+header.container input[type="search"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    justify-content: center;
+    font-style: unset;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeIn 1s ease-out;
+}
+
+header.container .caridiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+header.container .caridiv input[type="submit"] {
+    border-radius: 4px;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 8px;
+    font-size: 14px;
+    color: whitesmoke;
+    background-color: #000;
+    animation: fadeIn 1s ease-out;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #3333330a;
+}
+
+.navbar .item {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar .item li {
+    margin: 0 15px;
+}
+
+.navbar .item li a{
+    color: #fff;    
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar .item li a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    color: #0011ff;
+    font-style: italic;
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 20px;
+}
+
+.pembuka {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.pembuka p {
+    line-height: 1.6;
+}
+
+.pembuka h2 {
+    margin-top: 0;
+}
+
+.isi {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.salam p {
+    font-size: 18px;
+    line-height: 1.8;
+    width: 550px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.salamsatu {
+    font-size: 18px;
+    line-height: 1.8;
+    width: 400px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.asik {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.8;
+    width: 550px;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+details {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+details p {
+    font-style: unset;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font: bold;
+}
+
+.daerah figcaption {
+    font-style: italic;
+    font-size: 28px;
+    font: bold;
+}
+
+summary {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    animation: slideInLeft 1s ease-out;
+}
+
+summary img {
+    margin-right: 10px;
+    border-radius: 7px;
+    border: 2px solid #000000;
+    transition: transform 0.3s ease-in-out;
+}
+
+summary img:hover {
+    transform: scale(1.05);
+}
+
+summary figcaption {
+    font-style: italic;
+    font-size: 14px;
+}
+
+marquee {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.alamat table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
